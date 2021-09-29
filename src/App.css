@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cherish&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
+nav {
+  z-index: 2;
+}
+/*------Navbar left heading----------*/
+.navbar-brand {
+  font-family: "Cherish", cursive;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-size: 2.5rem;
+}
+/*-----Navbar fonts styling---------*/
+nav a.nav-link {
+  font-weight: 600;
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+}
+/*--------Navbar links margin*/
+
+.navbar-nav > li > a {
+  margin-right: 0.9375rem;
+  margin-left: 0.9375rem;
+  color: white !important;
+}
+/*------Navbar------*/
+.navbar {
+  height: 6rem;
+}
+/*-----navbar links-------*/
+.navbar-nav > li > a.active,
+.navbar-nav > li > a.active:focus {
+  border-bottom: 0.125rem orange solid;
+}
+.navbar-nav > li > a:hover {
+  border-bottom: 0.125rem orange solid;
+}
+/*Header*/
+.header-wrapper {
+  position: relative;
+  background: url(./assets/shubham-dhage-KD_JkwZEQ5k-unsplash.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.main-info h1 {
+  color: #ffd54f;
+  font-weight: bolder;
+  font-size: 90px;
+  letter-spacing: 1px;
+  font-family: "Dancing Script", cursive;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+/*--------Typed------*/
+.typed-info {
+  font-size: 2rem;
+  color: white;
+  font-weight: 700;
+}
+/*Contact Me*/
+.contact-me {
+  padding: 0.5rem;
+  border: 1px solid orange;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  border-radius: 0 10px 0 10px;
+  font-weight: 700;
+  margin-top: 0.625rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.contact-me:hover {
+  color: white;
+  zoom: 1.05;
+}
+/*-----partocles---------*/
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+/*-----profile-picture-------*/
+.profile-picture {
+  height: 400px;
+  width: 300px;
+  border-radius: 50px 0 50px 0;
+}
+.image-heading-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
