@@ -4,6 +4,7 @@ import Header from "./components/header";
 import NavBar from "./components/navbar";
 import Particles from "react-particles-js";
 import About from "./components/about";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
