@@ -3,58 +3,62 @@
 @import url("https://fonts.googleapis.com/css2?family=Cherish&display=swap");
 body {
   font-family: "Roboto", sans-serif;
+  position: relative;
 }
-nav {
-  z-index: 2;
-}
-/*------Navbar left heading----------*/
-.navbar-brand {
-  font-family: "Cherish", cursive;
-  font-weight: 600;
-  letter-spacing: 3px;
-  font-size: 2.5rem;
-}
-/*-----Navbar fonts styling---------*/
-nav a.nav-link {
-  font-weight: 600;
-  letter-spacing: 0.0375rem;
-  cursor: pointer;
-}
-/*--------Navbar links margin*/
-
-.navbar-nav > li > a {
-  margin-right: 0.9375rem;
-  margin-left: 0.9375rem;
-  color: white !important;
-}
-/*------Navbar------*/
 .navbar {
-  height: 6rem;
+  position: fixed !important;
+  transition: all 0.3s ease-out 0s !important;
+  padding: 1rem 4rem !important;
+  font-size: 1.2rem !important;
 }
-/*-----navbar links-------*/
-.navbar-nav > li > a.active,
-.navbar-nav > li > a.active:focus {
-  border-bottom: 0.125rem orange solid;
+.navbar-nav .nav-link {
+  margin-right: 15px;
+  margin-left: 15px;
+  text-transform: uppercase;
 }
-.navbar-nav > li > a:hover {
-  border-bottom: 0.125rem orange solid;
+.nav-link:hover {
+  border-bottom: 2px solid orange;
+}
+.nav-link .active {
+  color: white;
+  border-bottom: 2px solid orange;
 }
 /*Header*/
 .header-wrapper {
-  position: relative;
+  position: relative !important;
   background: url(./assets/shubham-dhage-KD_JkwZEQ5k-unsplash.jpg) no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 90vh;
+  background-size: cover !important;
+  background-position: center !important;
+  height: 100vh;
 }
-
-.main-info {
+/*--------social-icons----------*/
+.social-icons-initial {
+  height: 60px;
+  width: 60px;
   display: flex;
-  position: absolute;
-  flex-direction: column;
+  background-color: rgb(241, 176, 54);
   justify-content: center;
   align-items: center;
-  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+.social-icons-initial a {
+  cursor: pointer;
+}
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.main-info {
+  display: flex !important;
+  position: absolute !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
   font-family: "Roboto", sans-serif;
   top: 0;
   right: 0;
@@ -81,8 +85,8 @@ nav a.nav-link {
 .contact-me {
   padding: 0.5rem;
   border: 1px solid orange;
-  justify-content: center;
-  align-items: center;
+  justify-content: center !important;
+  align-items: center !important;
   color: white;
   text-decoration: none;
   border-radius: 0 10px 0 10px;
@@ -97,7 +101,7 @@ nav a.nav-link {
 }
 /*-----partocles---------*/
 .tsparticles-canvas-el {
-  position: absolute;
+  position: absolute !important;
   height: 100vh;
   width: 100vw;
   z-index: 1;
@@ -109,15 +113,38 @@ nav a.nav-link {
   border-radius: 50px 0 50px 0;
 }
 .image-heading-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
 }
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+/*about-wrapper*/
+.about-wrapper {
+  height: 100vh;
+  background-color: #525252;
+  margin-top: -10px;
+}
+/*skill-wrapper*/
+.skill-wrapper {
+  height: 100vh;
+  background-color: black;
+  margin-top: -10px;
+}
+/*project-wrapper*/
+.project-wrapper {
+  height: 100vh;
+  background-color: #525252;
+  margin-top: -10px;
+}
+/*contact-wrapper*/
+.contact-wrapper {
+  height: 100vh;
+  background-color: black;
+  margin-top: -10px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -127,10 +154,10 @@ nav a.nav-link {
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
   font-size: calc(10px + 2vmin);
   color: white;
 }
