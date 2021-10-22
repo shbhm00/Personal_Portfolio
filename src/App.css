@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cherish&display=swap");
 body {
   font-family: "Roboto", sans-serif;
@@ -144,6 +145,37 @@ body {
   height: 100vh;
   background-color: black;
   margin-top: -10px;
+}
+/*-------About section-------*/
+.about-wrapper {
+  font-family: "Poppins", sans-serif;
+}
+.about-intro h2 {
+  color: orange;
+  display: flex;
+  font-weight: 900;
+  padding-left: 150px;
+  padding-top: 100px;
+}
+.about-intro h2 span {
+  color: white;
+  margin-right: 10px;
+}
+.about-intro p {
+  color: white;
+  padding-left: 150px;
+  width: 55%;
+  font-size: larger;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-top: 30px;
+}
+.about-intro p span {
+  color: orange;
+  margin-left: 5px;
+}
+.about-intro p h4 {
+  padding-top: 30px;
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
