@@ -1,7 +1,16 @@
+import { Avatar, Card } from "@mui/material";
+import SkillSet from "./skill";
 const Skill = () => {
   return (
     <div className="skill-wrapper">
-      <h1 id="skill"></h1>
+      <div>
+        <h1 id="skill" className="skill-heading">
+          Professional Skillset
+        </h1>
+      </div>
+      <div>
+        <SkillSet />
+      </div>
     </div>
   );
 };

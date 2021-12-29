@@ -126,29 +126,22 @@ body {
 .about-wrapper {
   height: 100vh;
   background-color: #525252;
-  margin-top: -10px;
-}
-/*skill-wrapper*/
-.skill-wrapper {
-  height: 100vh;
-  background-color: black;
-  margin-top: -10px;
 }
 /*project-wrapper*/
 .project-wrapper {
   height: 100vh;
   background-color: #525252;
-  margin-top: -10px;
 }
 /*contact-wrapper*/
 .contact-wrapper {
   height: 100vh;
   background-color: black;
-  margin-top: -10px;
 }
 /*-------About section-------*/
 .about-wrapper {
   font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
 }
 .about-intro h2 {
   color: orange;
@@ -160,11 +153,12 @@ body {
 .about-intro h2 span {
   color: white;
   margin-right: 10px;
+  margin-left: 10px;
 }
 .about-intro p {
   color: white;
   padding-left: 150px;
-  width: 55%;
+  width: 70%;
   font-size: larger;
   font-weight: 600;
   letter-spacing: 1px;
@@ -176,6 +170,28 @@ body {
 }
 .about-intro p h4 {
   padding-top: 30px;
+}
+.aboutContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/*---------Skill Section----------*/
+.skill-wrapper {
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.skill-heading {
+  color: white;
+}
+.skillset-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

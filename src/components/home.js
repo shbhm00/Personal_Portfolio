@@ -5,7 +5,7 @@ import Social from "./socialIcon";
 const Home = () => {
   return (
     <div className="header-wrapper" id="home">
-      <Particle />
+      <Particle type={"star"} value={40} />
       <div className="main-info">
         <h1>Shubham Mishra</h1>
         <Typed
@@ -21,7 +21,7 @@ const Home = () => {
           loop
         />
         <a className="contact-me" href="#">
-          Contact Me
+          Find me on
         </a>
         <Social />
       </div>

@@ -1,23 +1,56 @@
 import Particles from "react-particles-js";
 
-const Particle = () => {
+const Particle = (props) => {
   return (
     <div>
       <Particles
         params={{
           particles: {
             number: {
-              value: 40,
+              value: 160,
               density: {
-                enable: true,
-                value_area: 700,
+                enable: false,
               },
             },
-            shape: {
-              type: "circle",
-              stroke: {
-                width: 4,
-                color: "#f57f17",
+            size: {
+              value: 3,
+              random: true,
+              anim: {
+                speed: 4,
+                size_min: 0.3,
+              },
+            },
+            line_linked: {
+              enable: false,
+            },
+            move: {
+              random: true,
+              speed: 1,
+              direction: "top",
+              out_mode: "out",
+            },
+          },
+          interactivity: {
+            events: {
+              onhover: {
+                enable: true,
+                mode: "bubble",
+              },
+              onclick: {
+                enable: true,
+                mode: "repulse",
+              },
+            },
+            modes: {
+              bubble: {
+                distance: 250,
+                duration: 2,
+                size: 0,
+                opacity: 0,
+              },
+              repulse: {
+                distance: 400,
+                duration: 4,
               },
             },
           },
