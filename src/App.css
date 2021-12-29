@@ -24,6 +24,13 @@ body {
   color: white;
   border-bottom: 2px solid orange;
 }
+/* .navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .show > .nav-link {
+  border-bottom: 2px solid orange;
+} */
+/* .navbar-dark .navbar-nav .nav-link {
+  border-bottom: 2px solid orange;
+} */
 /*Header*/
 .header-wrapper {
   position: relative !important;
@@ -179,19 +186,22 @@ body {
 
 /*---------Skill Section----------*/
 .skill-wrapper {
-  height: 100vh;
+  min-height: 100vh;
   background-color: black;
   display: flex;
   align-items: center;
   flex-direction: column;
+  place-content: center;
 }
 .skill-heading {
   color: white;
 }
 .skillset-wrapper {
+  max-width: 70%;
+}
+.skill-wrapper-parent {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  place-content: center;
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

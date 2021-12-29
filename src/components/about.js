@@ -4,7 +4,7 @@ import Profile from "../assets/profile.jpg";
 const About = () => {
   return (
     <div className="about-wrapper">
-      <Particle type={"circle"} value={10} />
+      {/* <Particle type={"circle"} value={10} /> */}
       <h1 id="about"></h1>
       <div className="aboutContainer">
         <div className="about-intro">
