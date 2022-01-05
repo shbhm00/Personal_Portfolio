@@ -1,7 +1,8 @@
+import Project_Component from "./projects/index";
 const Project = () => {
   return (
-    <div className="project-wrapper">
-      <h1 id="project"></h1>
+    <div id="project" className="project-wrapper">
+      <Project_Component />
     </div>
   );
 };
