@@ -136,8 +136,7 @@ body {
 }
 /*project-wrapper*/
 .project-wrapper {
-  height: 100vh;
-  margin-top: -10px;
+  height: 200vh;
   background-color: #1e2321;
 }
 /*contact-wrapper*/

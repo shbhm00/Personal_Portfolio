@@ -1,0 +1,17 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+}
+.card-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.card {
+  height: 60vh;
+  width: 45vh;
+  background-color: white;
+  margin-top: 10px;
+}
