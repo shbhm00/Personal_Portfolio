@@ -16,12 +16,12 @@ const projects = () => {
         <h1 style={{ fontSize: 50, color: "white", marginTop: 100 }}>
           Projects
         </h1>
-        <div className="card-wrapper">
+        <div className="card-wrapper-project">
           <Card />
           <Card />
           <Card />
         </div>
-        <div className="card-wrapper">
+        <div className="card-wrapper-project">
           <Card />
           <Card />
           <Card />
